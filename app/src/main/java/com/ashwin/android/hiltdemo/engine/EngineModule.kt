@@ -2,7 +2,6 @@ package com.ashwin.android.hiltdemo.engine
 
 import dagger.Binds
 import dagger.Module
-import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ActivityComponent
 
@@ -11,9 +10,4 @@ import dagger.hilt.android.components.ActivityComponent
 abstract class EngineModule {
     @Binds
     abstract fun bindEngine(engine: ElectricEngine): Engine
-
-//    @Provides
-//    fun provideName(): String {
-//        return "Tesla"
-//    }
 }

@@ -9,7 +9,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject
 
-@AndroidEntryPoint  // No need to inject this Activity in any component
+@AndroidEntryPoint  // Injects this Activity in any component
 class MainActivity : AppCompatActivity() {
     companion object {
         const val TAG = "hilt-demo"
